@@ -1,0 +1,13 @@
+[manage_node]
+192.168.56.101
+
+[control_node]
+192.168.56.102
+
+[all:children]
+manage_node
+control_node
+
+[all:vars]
+ansible_user=erwin
+ansible_ssh_private_key_file=/home/erwin/.ssh/id_rsa
